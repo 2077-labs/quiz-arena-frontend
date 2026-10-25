@@ -11,6 +11,7 @@ import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.tooling.preview.Preview
+import com.bfp.quizarena.feature.quiz.creator.CreateQuizScreen
 import com.bfp.quizarena.ui.theme.QuizArenaTheme
 
 class MainActivity : ComponentActivity() {
@@ -20,8 +21,7 @@ class MainActivity : ComponentActivity() {
         setContent {
             QuizArenaTheme {
                 Scaffold(modifier = Modifier.fillMaxSize()) { innerPadding ->
-                    Greeting(
-                        name = "Android",
+                    CreateQuizScreen(
                         modifier = Modifier.padding(innerPadding)
                     )
                 }
